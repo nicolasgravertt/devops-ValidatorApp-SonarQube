@@ -8,6 +8,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        String usuario = System.getenv("APP_USER");
+        if ("admin".equals(usuario)) {
+            System.out.println("¡Bienvenido administrador!");
+        }
     }
 }
